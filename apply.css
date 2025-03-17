@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root {
+    --bg-color-light: #ffffff;
+    --text-color-light: #000000;
+    --bg-color-dark: #1a1a1a;
+    --text-color-dark: #ffffff;
+  }
+  /* Light mode */
+  .light-mode {
+    --bg-color: var(--bg-color-light);
+    --text-color: var(--text-color-light);
+  }
+  
+  /* Dark mode */
+  .dark-mode {
+    --bg-color: var(--bg-color-dark);
+    --text-color: var(--text-color-dark);
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+
+.buttonss {
+    display: flex;
+    padding: 10px;
+}
+.buttonss button{
+
+
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    padding: 1px 13px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 1px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+}
+.buttonss button a{
+    text-decoration: none;
+    color: #6A2C70;
+}
+.button-animate:hover{
+   
+
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+.buttonss button:active {
+    transform: scale(0.9);
+  }
+
+.contianAll{
+    margin-left: 100px;
+    margin-right: 100px;
+    backdrop-filter:blur(10px) ;
+    background:rgba(243, 241, 241, 0.25) ;
+    border-radius: 5px;
+    
+}
+
+
+
+
+
+    
+    

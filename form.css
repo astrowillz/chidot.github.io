@@ -1,0 +1,80 @@
+:root {
+    --bg-color-light: #ffffff;
+    --text-color-light: #000000;
+    --bg-color-dark: #1a1a1a;
+    --text-color-dark: #ffffff;
+  }
+  /* Light mode */
+  .light-mode {
+    --bg-color: var(--bg-color-light);
+    --text-color: var(--text-color-light);
+  }
+  
+  /* Dark mode */
+  .dark-mode {
+    --bg-color: var(--bg-color-dark);
+    --text-color: var(--text-color-dark);
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+.form-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid #fff;
+    width: 500px;
+    backdrop-filter:blur(10px) ;
+    background:rgba(255, 255, 255, 0.25) ;
+    border-radius: 20px;
+    text-transform: capitalize;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+    }
+    .form-select{
+        backdrop-filter:blur(10px) ;
+        background:rgba(255, 255, 255, 0.25) ;
+        margin: 5px;
+        width: 100%;
+        padding:5px ;
+        border-radius: 5px;
+    }
+    .inputbox input{
+        margin: 5px;
+        width: 100%;
+        padding:5px ;
+        border-radius: 5px;
+        backdrop-filter:blur(10px) ;
+        background:rgba(255, 255, 255, 0.25) ;
+        /* background: #fff; */
+        border: none;
+         
+    }
+    #btn{
+        background: rgb(228, 158, 228);
+    }
+    #btn:hover{
+        background: palevioletred;
+        transform: translatex(3px); 
+        transition: all 0.3s;
+    }
+    a:hover{
+        color: rgb(171, 66, 164);
+    }
+    a{
+        color: blueviolet;
+        text-decoration: none;
+    }
+    h1{
+        text-transform: capitalize;
+        width: 100%;
+        color: rgb(107, 67, 107);
+    }
+    
+    
+    

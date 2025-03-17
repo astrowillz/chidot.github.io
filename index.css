@@ -1,0 +1,612 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.comments .red {
+  background-color: #526ab1;
+}
+
+.comments .blue {
+  background-color: #526ab1;
+}
+
+.comments .green {
+  background-color: #526ab1;
+}
+
+
+
+
+
+
+
+
+.comments .comments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+.covering{
+  margin-bottom: 100px;
+}
+.comments .comments p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.comments .comments p.second-text {
+  font-size: .7em;
+}
+
+.comments .comments:hover {
+  transform: scale(1.0, 1.1);
+}
+
+.comments:hover > .comments:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+#allumnis{
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1230px) {
+  .comments .comments {
+    width: 80%; /* Adjust the width as needed for smaller screens */
+    margin: 0 auto; /* Center the elements horizontally */
+    height: 300px;
+  }
+}
+
+
+.courses-h3{
+  text-align: center;
+}
+.inputtttt {
+
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  background-color: #163058;
+  justify-content: center;
+  border-radius: 5px;
+  margin: 0 auto; /* Add this line to center horizontally */
+  /* align-items: center;  */
+  padding: 20px; /* Add padding for better spacing */
+  
+}
+
+@media screen and (max-width: 1230px) {
+  .inputtttt {
+    width: 70%; /* Adjust the width as needed for smaller screens */
+    margin: 0 auto; /* Center the elements horizontally */
+   
+  }
+}
+
+  @media screen and (max-width: 1230px) {
+    .form-container {
+      width: 70%; /* Adjust the width as needed for smaller screens */
+      margin: 0 auto; /* Center the elements horizontally */
+     
+    }
+
+}
+.inputtttt a{
+  text-decoration: none;
+  color: whitesmoke;
+  
+}
+.value {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  color: white;
+  display: flex;
+  position: relative;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.value:not(:active):hover,
+.value:focus {
+  background-color: #21262C;
+}
+
+.value:focus,
+.value:active {
+  background-color: #1A1F24;
+  outline: none;
+}
+
+.value::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 5px;
+  height: 80%;
+  background-color: #2F81F7;
+  border-radius: 5px;
+  
+  opacity: 0;
+}
+
+.value:focus::before,
+.value:active::before {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+.footer-text{
+  padding-left: 59px;
+}
+
+:root {
+  --bg-color-light: #ffffff;
+  --text-color-light: #000000;
+  --bg-color-dark: #1a1a1a;
+  --text-color-dark: #ffffff;
+}
+/* Light mode */
+.light-mode {
+  --bg-color: var(--bg-color-light);
+  --text-color: var(--text-color-light);
+}
+
+/* Dark mode */
+.dark-mode {
+  --bg-color: var(--bg-color-dark);
+  --text-color: var(--text-color-dark);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* Light mode styles */
+.light-mode {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+h2{
+    text-align: center;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 800px;
+}
+.navbar-brand img{
+    width: 100px;
+    height: 100px;
+}
+.buttonss {
+    display: flex;
+    padding: 10px;
+}
+.buttonss button{
+
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    padding: 1px 13px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 1px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+}
+.buttonss button a{
+    text-decoration: none;
+    color: #6A2C70;
+}
+.button-animate:hover{
+    color: rgb(255, 255, 255);
+    box-shadow: inset 0 -100px 0 0 #b3b0bd;
+}
+
+.button-animate{
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  padding: 20px 13px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #725AC1;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 3px solid #725AC1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725AC1;
+}
+.button-animate a{
+  text-decoration: none;
+}
+
+.buttonss button:active {
+    transform: scale(0.9);
+  }
+
+
+
+@media screen and (max-width: 768px) {
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links a {
+        padding: 8px 16px;
+    }
+
+    .buttonss {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttonss button {
+        width: auto;
+    }
+}
+
+.links{
+    display: flex;
+}
+.links a{
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: var(--p-font);
+    padding: 10px 22px;
+
+}
+
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 13%;
+    background: transparent;
+    transition: all .40s ease;
+
+}
+.all_courses{
+  margin: 100px;
+  
+}
+.all_courses h3{
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+.all_courses button{
+  margin-left: 10px;
+    font-family: monospace;
+    background-color: #7db1c3;
+    color: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    height: 45px;
+    transition: .3s;
+  }
+  
+ 
+.all_courses a{
+  text-decoration: none;
+  color: #5e4dcd;
+}
+
+.go-arrow a{
+    text-decoration: none;
+}
+
+.footer-col {
+    flex: 1;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.footer-col a{
+  text-decoration: none;
+  color: #000000;
+}
+
+footer{
+  background-color: rgba(6, 43, 107, 0.8);
+  padding-top: 20px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+.text-border{
+  border: solid blue 2px;
+  border-radius: 50px;
+  margin: 20px;
+  margin-bottom: 100px;
+
+}
+.missionHead{
+    font-size: 30px;
+}
+.visionHead{
+    font-size: 30px;
+}
+.mission{
+    
+   margin-left:100px ;
+   margin-right: 100px;
+}
+
+#vision{
+    margin-left:100px ;
+    margin-right: 100px;
+}
+
+.about-us{
+    margin-left:100px ;
+    margin-right: 100px;
+}
+.about-us2{
+  margin-left:100px ;
+  margin-right: 100px;
+  
+}
+.aboutUsHead{
+    font-size: 30px; 
+}
+
+  
+
+
+  .input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  min-height: 50px;
+  max-width: 150px;
+  padding: 0 1rem;
+  color: #000000;
+  font-size: 15px;
+  border: 1px solid #000000;
+  border-radius: 6px 0 0 6px;
+  background-color: transparent;
+}
+
+.button--submit {
+  min-height: 50px;
+  padding: .5em 1em;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: #5e4dcd;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+.button--submit:hover {
+  background-color: #5e5dcd;
+}
+
+.input:focus, .input:focus-visible {
+  border-color: #3898EC;
+  outline: none;
+}
+
+
+
+/* for the courses */
+#pin{
+    display:flex ;
+    flex-wrap: 1;
+    margin: 100px;
+}
+.card-title {
+    color: #262626;
+    font-size: 1.5em;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+  
+  .small-desc {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #452c2c;
+  }
+  
+  .small-desc {
+    font-size: 1em;
+  }
+  
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, #6293c8, #384c6c);
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
+  
+  .card {
+    display: block;
+    position: relative;
+    max-width: 450px;
+    max-height: 420px;
+    background-color: #f2f8f9;
+    border-radius: 10px;
+    padding: 2em 1.2em;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #c3e6ec, #a7d1d9);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .card:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: linear-gradient(135deg, #364a60, #384c6c);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.35s ease-out;
+  }
+  
+  .card:hover:before {
+    transform: scale(28);
+  }
+  
+  .card:hover .small-desc {
+    transition: all 0.5s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .card:hover .card-title {
+    transition: all 0.5s ease-out;
+    color: #ffffff;
+  }
+
+  @media screen and (max-width: 1230px) {
+    #pin {
+      flex-direction: column;
+      align-items: center;
+      margin: 50px;
+    }
+  
+    .card {
+      max-width: 100%;
+      margin: 12px 0;
+    }
+  
+    .go-corner {
+      display: none;
+    }
+  }
+
+
+
+  #map {
+    height: 400px; /* Adjust the height as needed */
+    width: 100%; /* Use the full width of its container */
+  }
+
+  
+
+  /* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-whatsapp {
+  background: #25e25a;
+  color: white;
+}
+
+.fa-instagram {
+  background: #c94e9a;
+  color: white;
+}
